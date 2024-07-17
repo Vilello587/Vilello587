@@ -1,0 +1,14 @@
+import requests
+ 
+url = 'http://example.com/api/data'
+params = {
+    'param1': 'value1',
+    'param2': 'value2',
+}
+response = requests.get(url, params=params)
+data = response.json()
+ 
+for item in data['items']:
+    title = item['title']
+    link = item['link']
+    print(f'Title: {title}, Link: {link}')
