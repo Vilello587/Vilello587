@@ -1,0 +1,17 @@
+import  pymysql
+db = pymysql.connect(host='127.0.0.1', user='root', password='713151', database='f_text')
+cursor = db.cursor()
+cursor.execute("DROP TABLE IF EXISTS 学生信息")
+sql = """CREATE TABLE 学生信息(
+学号 int(8) NOT NULL AUTO_INCREMENT,
+姓名 varchar(50) NOT NULL,
+性别 varchar(50) NOT NULL,
+所属班级 varchar(50) DEFAULT NULL,
+出生日期 date DEFAULT NULL,
+备注 varchar(255) DEFAULT NULL,
+图片 mediumblob DEFAULT NULL,
+PRIMARY KEY (学号)   
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+"""
+cursor.execute(sql)
+db.close()
