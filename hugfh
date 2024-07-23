@@ -1,0 +1,45 @@
+package cvit.com.model;    
+public class Course {
+    public String cno;     
+    public String cname;  
+    public String cteacher;
+    public String ctype;   
+    public String cplace;  
+    public String ctime;       
+    public void setCname(String cname) {
+        this.cname = cname;
+    }
+    public void setCno(String cno) {
+        this.cno = cno;
+    }
+    public void setCplace(String cplace) {
+        this.cplace = cplace;
+    }
+    public void setCteacher(String cteacher) {
+        this.cteacher = cteacher;
+    }
+    public void setCtime(String ctime) {
+        this.ctime = ctime;
+    }
+    public void setCtype(String ctype) {
+        this.ctype = ctype;
+    }
+    public String getCtype() {
+        return ctype;
+    }
+    public String getCtime() {
+        return ctime;
+    }
+    public String getCteacher() {
+        return cteacher;
+    }
+    public String getCplace() {
+        return cplace;
+    }
+    public String getCno() {
+        return cno;
+    }
+    public String getCname() {
+        return cname;
+    }
+}
